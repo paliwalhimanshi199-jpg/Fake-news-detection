@@ -1,0 +1,28 @@
+{
+  "dataset": "ISOT Fake News Dataset (legacy article corpus)",
+  "test_size": 7817,
+  "test_fake": 3578,
+  "test_real": 4239,
+  "majority_baseline_accuracy": 0.5423,
+  "pipeline": {
+    "representation": "stopwords",
+    "vectorizer": "TF-IDF unigrams+bigrams",
+    "model": "Linear SVM",
+    "hyperparameters": "C=2.0, class_weight=None",
+    "threshold": -0.1785,
+    "score_kind": "decision score"
+  },
+  "test_metrics": {
+    "accuracy": 0.9935,
+    "precision_fake": 0.9886,
+    "recall_fake": 0.9972,
+    "f1_fake": 0.9929,
+    "precision_real": 0.9976,
+    "recall_real": 0.9903,
+    "f1_real": 0.9940,
+    "f1_macro": 0.9934,
+    "mcc": 0.9869,
+    "roc_auc": 0.9998,
+    "selection_score": 0.9953
+  }
+}
